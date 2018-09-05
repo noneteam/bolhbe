@@ -1,0 +1,96 @@
+ui-view:empty
+{
+	display: block;
+	padding-top: 60%;
+	font-size: 60px;
+	text-align: center;
+	color: #fff;
+	text-shadow: 1px 0px 4px rgba(114, 132, 140, .3);
+}
+ui-view:empty::before
+{
+	content: "Загрузка...";
+}
+@media(max-width:767px) {
+	ui-view:empty
+	{
+		padding-top: 80%;
+	}
+}
+@media(min-width:768px) {
+	ui-view:empty
+	{
+		padding-top: 30%;
+	}
+}
+@media(min-width:1140px) {
+	ui-view:empty
+	{
+		padding-top: 25%;
+	}
+}
+/**
+ * Оформление процеса загрузки страницы
+ */
+
+.page-home
+{
+	background-color: #1fb36b;
+	background: -webkit-linear-gradient(top, #1fb36b, #1fb3a0);
+	color: #fff;
+	text-align: center;
+	line-height: 26px;
+	margin-top: 50px;
+}
+.page-home h1
+{
+	font-weight: bold;
+	font-size: 300%
+}
+.page-home p
+{
+	margin-bottom: 30px;
+}
+.page-home a,
+.page-home a:hover,
+.page-home a:active,
+.page-home a:active:hover
+{
+	color: #fff;
+	text-decoration: none;
+}
+.page-home .btn-add-content,
+.page-home .btn-add-content:focus,
+.page-home .btn-add-content:active:hover
+{
+	border-color: #fbbc2d;
+	color: #fff;
+}
+.page-home .btn-add-content:hover
+{
+	border-color: rgba(255, 255, 255, .4);
+}
+.page-home .list-container-link::after
+{
+	border-color: rgba(255, 255, 255, .4);
+}
+@media(min-width: 768px) {
+	.page-home .list-container-link
+	{
+		position: relative;
+		top: 2px;
+	}
+}
+@media(max-width: 767px) {
+	.page-home .btn-add-content,
+	.page-home .btn-add-content:focus,
+	.page-home .btn-add-content:active:hover
+	{
+		position: absolute;
+		bottom: 60px;
+	}
+}
+/**
+ * Оформление главной страницы
+ */
+

@@ -1,0 +1,105 @@
+@media(min-width:767px){
+	.list-vacancy .btn-add-content
+	{
+		position: absolute;
+		right: 15px;
+		top: 42px;
+	}
+	.list-vacancy .btn-add-content i
+	{
+		color: #72848c;
+	}
+	.view-vacancy .col-content
+	{
+		float: right;
+	}
+}
+.view-vacancy
+{
+	margin-top: 50px;
+}
+.view-vacancy .col-company
+{
+	padding-top: 15px;
+}
+.view-vacancy header .fa-building-o
+{
+	position: relative;
+	top: -3px;
+	font-size: 17px;
+	opacity: .4;
+}
+.view-vacancy .col-content
+{
+	font-size: 16px;
+	padding-top: 15px;
+	line-height: 24px;
+}
+.view-vacancy .col-content ul,
+.view-vacancy .col-content ol
+{
+	padding-left: 0;
+	counter-reset: my-badass-counter;
+}
+@media (max-width: 767px)
+{
+	.view-vacancy .col-content ul,
+	.view-vacancy .col-content ol
+	{
+		padding-left: 15px;
+	}
+}
+.view-vacancy .col-content ul ul,
+.view-vacancy .col-content ul ol,
+.view-vacancy .col-content ol ol,
+.view-vacancy .col-content ol ul
+{
+	padding-left: 17px;
+	font-size: 15px;
+}
+.view-vacancy .col-content ul li,
+.view-vacancy .col-content ol li
+{
+	list-style-type: none;
+	position: relative;
+}
+.view-vacancy .col-content ul li::before,
+.view-vacancy .col-content ol li::before
+{
+	color: #72848c;
+	content: "•";
+	left: -31px;
+	width: 22px;
+	position: absolute;
+	text-align: right;
+}
+
+.view-vacancy .col-content ol li:before
+{
+	content: counter(my-badass-counter) '.';
+	counter-increment: my-badass-counter;
+	left: -27px;
+}
+
+button[sharebutton="facebookcom"]
+{
+	background-color: #4267b2;
+	color: #fff;
+	border: 0;
+}
+button[sharebutton="vkcom"]
+{
+	background-color: #5e81a8;
+	color: #fff;
+	border: 0;
+}
+button[sharebutton="twittercom"]
+{
+	background-color: #1da1f3;
+	color: #fff;
+	border: 0;
+}
+button.btn-print
+{
+	
+}

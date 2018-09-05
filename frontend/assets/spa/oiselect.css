@@ -1,0 +1,120 @@
+oi-select .select-search ul
+{
+	background-color: rgba(255,255,255,0.4);
+	border-width: 2px;
+	border-style: solid;
+	border-color: #e9e9e9;
+	border-radius: 4px;
+	padding: 0;
+	position: relative;
+	min-height: 40px;
+	margin: 0;
+}
+oi-select.focused .select-search ul
+{
+	border-color: #2dd5fb;
+}
+oi-select .select-search ul:before
+{
+	content: "\f002";
+	font-family: FontAwesome;
+	position: absolute;
+	top: 10px;
+	right: 12px;
+	color: rgba(114,132,140,.4);
+	font-size: 10px;
+}
+oi-select li
+{
+	list-style: none;
+}
+oi-select ul li.select-search-list-item_selection,
+oi-select ul li input
+{
+	min-height: 32px!important;
+	border: none;
+	padding: 4px 10px;
+	font-size: 17px;
+	width: calc(100% - 38px);
+	margin: 2px;
+	position: relative;
+	z-index: 2;
+}
+.mm-panel form oi-select ul li input
+{
+	width: calc(100% - 38px);
+	background-color: transparent;
+}
+oi-select ul li.select-search-list-item_input
+{
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	width: 100%
+}
+
+oi-select.multiple ul li.select-search-list-item_input,
+oi-select.multiple ul li.select-search-list-item_selection,
+oi-select.multiple ul li input
+{
+	width: auto;
+	position: relative;
+}
+oi-select ul li.select-search-list-item_selection,
+oi-select ul li.select-search-list-item_selection:focus,
+oi-select ul li.select-search-list-item_selection:active,
+oi-select ul li.select-search-list-item_selection:hover,
+oi-select ul li.select-search-list-item_selection:active:hover
+{
+	color: #72848c;
+	background-color: #fcfcfc;
+	padding: 4px 10px 3px;
+	text-align: left; 
+}
+oi-select.multiple ul li.select-search-list-item_selection.focused
+{
+	background-color: rgba(114, 132, 140, .4);
+	color: #fff;
+}
+oi-select ul li.select-search-list-item_selection span
+{
+	display: none;
+	color: #72848c;
+	opacity: .4;
+	font-size: 19px;
+	margin-top: 2px;
+}
+
+oi-select .select-dropdown ul
+{
+	padding: 0;
+	position: absolute;
+	z-index: 3;
+	background-color: #f8f8f8;
+	width: calc(100% - 40px);
+	margin-top: -3px;
+	border: 2px solid #2dd5fb;
+	border-top: 0;
+	border-radius: 0 0 4px 4px;
+	padding-bottom: 6px;
+}
+oi-select .select-dropdown ul li
+{
+	padding: 0 12px;
+	color: rgba(114, 132, 140, 0.4);
+	font-size: 14px;
+	cursor: pointer;
+}
+oi-select .select-dropdown ul li.active
+{
+	background-color: #f3f3f3;
+}
+oi-select .select-dropdown ul li:first
+{
+	opacity: .5;
+}
+oi-select .select-dropdown ul li strong
+{
+	font-weight: 100;
+	color: #72848c;
+}
